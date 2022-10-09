@@ -1,0 +1,33 @@
+p-divider{
+  width: 100%;
+}
+
+.iconCard{
+width: 40px;
+margin-top: 10px;
+margin-left: 10px;
+font-size: 25px;
+}
+
+.iconTecnology{
+  font-size: 30px;
+  margin: 15px;
+}
+
+img{
+  padding: 5px;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.sqlIcon{
+
+ margin:10px;
+  font-size: 100px;
+}
+
+p-card{
+  align-items: center;
+  text-align: center;
+}
