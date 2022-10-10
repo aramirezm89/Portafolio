@@ -1,0 +1,36 @@
+
+    <p-card
+      [header]="proyecto.titulo"
+      [style]="{ width: '100%', 'margin-bottom': '2em' }"
+      styleClass="p-card-shadow"
+    >
+      <img class="imgCard" alt="Card" [src]="proyecto.img" />
+
+      <p>
+       {{proyecto.descripcion}}
+      </p>
+      <ng-template pTemplate="footer">
+        <a
+          [href]="proyecto.webPage"
+          target="_blank"
+          pButton
+          pRipple
+          type="button"
+          label="Ver"
+          icon="pi pi-eye"
+        ></a>
+        <a
+          class="p-button-success"
+          [href]="proyecto.repositorio"
+          title="Git-Hub"
+          target="_blank"
+          pButton
+          pRipple
+          type="button"
+          label="Repositorio"
+          icon="pi pi-github"
+          [style]="{ marginLeft: '10px' }"
+        ></a>
+      </ng-template>
+    </p-card>
+

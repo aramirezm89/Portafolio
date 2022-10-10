@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { PrimeNgModule } from './prime-ng.module';
+import { ComponentsModule } from './components/components.module';
+
+
 
 @NgModule({
   declarations: [
@@ -13,6 +16,7 @@ import { PrimeNgModule } from './prime-ng.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ComponentsModule,
     FlexLayoutModule,
     PrimeNgModule
   ],

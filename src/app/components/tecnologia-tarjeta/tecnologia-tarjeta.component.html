@@ -1,0 +1,15 @@
+ <p-card
+      [header]="tecnologia.titulo"
+      [style]="{ width: '100%', 'margin-bottom': '2em' }"
+    >
+      <ng-template pTemplate="header">
+        <i class="pi pi-code iconCard"></i>
+      </ng-template>
+
+      <img
+        *ngFor="let foto of tecnologia.imagenes"
+        [src]="foto"
+      />
+
+     <i [class]="icon" *ngFor="let icon of tecnologia.iconos"></i>
+    </p-card>

@@ -24,6 +24,18 @@
         icon="pi pi-linkedin"
         class="p-button-rounded"
       ></a>
+
+      <a
+        href="https://drive.google.com/file/d/1PQ_4bjP91-BfoJ5aEVpvsCGUKMLhUD_l/view?usp=sharing"
+        title="Curriculum"
+        target="_blank"
+        pButton
+        pRipple
+        type="button"
+        icon="pi pi-download"
+        class="p-button-rounded"
+      >
+      </a>
     </div>
   </div>
 </div>
@@ -50,131 +62,28 @@
   </p-card>
 </div>
 
+<!-- tecnologias -------------------------------------------------------------------------------->
 <div class="row" fxLayoutAlign="center center">
-  <span><i class="pi pi-desktop iconTecnology"></i></span>
+  <span><i class="pi pi-desktop iconTitle"></i></span>
   <h1>Tecnologias</h1>
 </div>
 <div fxLayout="row wrap" fxLayoutAlign="space-evenly" fxLayout.xs="column">
-  <div fxLayout="column" fxFlex="40">
-    <p-card
-      header="Lenguajes"
-      [style]="{ width: '100%', 'margin-bottom': '2em' }"
-    >
-      <ng-template pTemplate="header">
-        <i class="pi pi-code iconCard"></i>
-      </ng-template>
-
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-      />
-
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-      />
-
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-      />
-    </p-card>
-  </div>
-
-  <div fxLayout="column" fxFlex="40">
-    <p-card
-      header="Base de Datos"
-      [style]="{ width: '100%', 'margin-bottom': '2em' }"
-    >
-      <ng-template pTemplate="header">
-        <i class="pi pi-code iconCard"></i>
-      </ng-template>
-
-      <i class="devicon-microsoftsqlserver-plain-wordmark sqlIcon"></i>
-
-      <i class="devicon-mongodb-plain-wordmark sqlIcon"></i>
-    </p-card>
-  </div>
-
-  <div fxLayout="column" fxFlex="30">
-    <p-card
-      header="Backend"
-      [style]="{ width: '100%', 'margin-bottom': '2em' }"
-    >
-      <ng-template pTemplate="header">
-        <i class="pi pi-code iconCard"></i>
-      </ng-template>
-
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
-      />
-
-
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
-
-    </p-card>
-  </div>
-
-  <div fxLayout="column" fxFlex="30">
-    <p-card
-      header="Frontend"
-      [style]="{ width: '100%', 'margin-bottom': '2em' }"
-    >
-      <ng-template pTemplate="header">
-        <i class="pi pi-code iconCard"></i>
-      </ng-template>
-
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
-      />
-    </p-card>
-  </div>
-
-  <div fxLayout="column" fxFlex="30">
-    <p-card
-      header="Maquetación"
-      [style]="{ width: '100%', 'margin-bottom': '2em' }"
-    >
-      <ng-template pTemplate="header">
-        <i class="pi pi-code iconCard"></i>
-      </ng-template>
-
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"
-      />
-
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-      />
-
-      <img
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg"
-      />
-    </p-card>
-  </div>
-
-  <div fxLayout="column" fxFlex="30">
-    <p-card
-      header="Control de versiones"
-      [style]="{ width: '100%', 'margin-bottom': '2em' }"
-    >
-      <ng-template pTemplate="header">
-        <i class="pi pi-code iconCard"></i>
-      </ng-template>
-
-
-
-            <i class="devicon-git-plain-wordmark colored sqlIcon"></i>
-
-
-
-            <i class="devicon-github-original-wordmark sqlIcon"></i>
-
-
-
-
-    </p-card>
+  <div fxLayout="column" fxFlex="40" *ngFor="let tecnologia of tecnologias">
+    <app-tecnologia-tarjeta [tecnologia]="tecnologia" ></app-tecnologia-tarjeta>
   </div>
 </div>
 
+
+
+<!-- Proyectos ------------------------------------------------------------------------------------->
 <div class="row" fxLayoutAlign="center center">
-  <span><i class="pi pi-cog iconTecnology"></i></span>
+  <span><i class="pi pi-cog iconTitle"></i></span>
   <h1>Proyectos</h1>
 </div>
+
+<div fxLayout="row wrap" fxLayoutAlign="space-evenly" fxLayout.xs="column">
+  <div fxLayout="column" fxFlex="40" *ngFor="let proyecto of proyectos">
+    <app-proyecto-tarjeta [proyecto]="proyecto"></app-proyecto-tarjeta>
+  </div>
+</div>
+
