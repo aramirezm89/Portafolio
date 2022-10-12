@@ -1,0 +1,15 @@
+#endTemplate,a{
+  margin: 6px;
+  padding: 5px , 0,5px;
+}
+
+img{
+  border-radius: 50%;
+  width: 70px;
+  padding: 10px;
+
+}
+
+span{
+  font-weight: 700;
+}

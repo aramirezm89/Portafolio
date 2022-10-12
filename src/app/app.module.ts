@@ -6,19 +6,22 @@ import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { PrimeNgModule } from './prime-ng.module';
 import { ComponentsModule } from './components/components.module';
+import { SharedModule } from './shared/shared.module';
+
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ComponentsModule,
     FlexLayoutModule,
-    PrimeNgModule
+    PrimeNgModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,8 +11,8 @@ export class CardServiceService {
     this.proyectos = [
       {
         titulo: 'Heroe App',
-        descripcion:
-          ' Proyecto realizado con Angular en el Frontend, C# en el Backend y MongoDB como motor de base de datos',
+        descripcion: `Proyecto realizado con Angular en el Frontend, C# en el Backend y MongoDB
+        como motor de base de datos.`,
         img: '../assets/proyectos/heroesApp.PNG',
         webPage: 'https://heroe-app-angular.web.app/login',
         repositorio: 'https://github.com/aramirezm89/05-heroesApp',
@@ -28,7 +28,7 @@ export class CardServiceService {
       {
         titulo: 'Angular Maps',
         descripcion:
-          ' Proyecto realizado con Angular y bootstrap en el Frontend, y una libreria de Js Mapbox',
+          ' Proyecto realizado con Angular y bootstrap en el Frontend, y una libreria de Js llamada Mapbox',
         img: '../assets/proyectos/app-maps.PNG',
         webPage: 'https://app-maps2-angular.web.app/mapas',
         repositorio: 'https://github.com/aramirezm89/13-mapas-app-2',
