@@ -35,5 +35,12 @@ p-card{
   height: 100%;
 }
 
+.mi-imagen{
+border-radius: 50%;
+height:200px;
+width: 200px;
+pad: 10px;
+margin-top: 20px;
+}
 
 

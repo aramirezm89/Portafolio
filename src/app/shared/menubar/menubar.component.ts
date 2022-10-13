@@ -14,17 +14,17 @@ export class MenubarComponent implements OnInit {
   ngOnInit(): void {
      this.items = [
        {
-         label: '¿Quien soy',
+         label: 'Sobre mi',
          url: '#quienSoy',
          target: '_self',
        },
        {
-         label: '¿Proyectos',
+         label: 'Proyectos',
          url: '#proyectos',
          target: '_self',
        },
        {
-         label: 'Titulo Profesional y cursos',
+         label: 'Título Profesional y cursos',
          url: '#titulo',
          target: '_self',
        },
